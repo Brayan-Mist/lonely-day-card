@@ -83,10 +83,10 @@ const parseLrc = (lrcText) => {
 };
 
 const useFallbackLyrics = () => {
-  songMoments = [...defaultSongMoments];
+  songMoments = [];
   isUsingTimedLyrics = false;
   lyricsReady = true;
-  updateSongMoment();
+  clearSongLine();
 };
 
 const loadLrc = () => {
