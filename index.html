@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lonely Day, Our First Yes</title>
+    <link rel="preload" href="assets/lonely-day-evening.png" as="image" />
+    <link rel="preload" href="assets/lonely-day-cover.webp" as="image" />
+    <link rel="preload" href="assets/tea-cup.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="postcard" aria-label="Lonely Day love postcard">
+      <img
+        class="postcard__image"
+        src="assets/lonely-day-evening.png"
+        alt="Quiet rainy evening terrace with a bench, a warm window, and city lights"
+      />
+      <div class="postcard__veil"></div>
+      <div class="rain" aria-hidden="true"></div>
+
+      <div class="content">
+        <section class="message" aria-label="Love message">
+          <p class="message__eyebrow">june 17, 2026 at 22:53:58</p>
+          <h1>She said yes.</h1>
+          <p class="message__text">
+            I love you so much. You are the best girl in the world, and when you
+            said yes, the loneliest day became the first page of us.
+          </p>
+          <p class="message__signature">hand in hand, from that second on</p>
+        </section>
+
+        <section class="player" aria-label="Song and relationship timer">
+          <div class="tea-cup" aria-hidden="true">
+            <img src="assets/tea-cup.png" alt="" />
+          </div>
+          <div class="vinyl-stage" aria-hidden="true">
+            <div class="record">
+              <div class="record__shine"></div>
+              <div class="record__label">
+                <img
+                  src="assets/lonely-day-cover.webp"
+                  alt="System of a Down Lonely Day cover"
+                />
+              </div>
+            </div>
+            <div class="tonearm">
+              <span class="tonearm__needle"></span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="floor-row" aria-label="Song controls and relationship timer">
+        <div class="relationship">
+          <p class="relationship__eyebrow">together for</p>
+          <div class="love-timer" aria-live="polite">
+            <span><strong data-time-part="days">000</strong><small>days</small></span>
+            <span><strong data-time-part="hours">00</strong><small>hours</small></span>
+            <span><strong data-time-part="minutes">00</strong><small>min</small></span>
+            <span><strong data-time-part="seconds">00</strong><small>sec</small></span>
+          </div>
+          <p class="relationship__start">since she said yes</p>
+        </div>
+
+        <div class="audio-card" role="group" aria-label="Song player and lyrics">
+          <button class="play-once" type="button" aria-label="Play Lonely Day">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5v14l11-7Z" />
+            </svg>
+            <span>Play</span>
+          </button>
+
+          <div class="song-moment" aria-live="polite">
+            <p class="song-moment__eyebrow">lyrics</p>
+            <p class="song-moment__line" data-song-line></p>
+            <div class="song-progress" aria-hidden="true">
+              <span data-song-progress></span>
+            </div>
+            <p class="song-time">
+              <span data-song-current>0:00</span>
+              <span data-song-duration>0:00</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <audio id="song" preload="metadata" src="assets/lonely-day.mp3" loop></audio>
+    </main>
+
+    <script src="script.js?v=no-phantom-lines"></script>
+  </body>
+</html>
