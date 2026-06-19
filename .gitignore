@@ -5,13 +5,3 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-preview_*.mp3
-preview_alignment_check.mp3
-
-# Local copyrighted/source-only files. Keep these out of public GitHub Pages.
-lyrics-raw.md
-lyrics.txt
-lyrics-spat-raw.md
-lyrics-spat.txt
-assets/*.mp3
-assets/*.lrc
