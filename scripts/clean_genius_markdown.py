@@ -13,7 +13,13 @@ from pathlib import Path
 
 
 MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]+\)")
-SECTION_RE = re.compile(r"^\[[A-Za-z ]+(?::[^\]]*)?\]$")
+SECTION_RE = re.compile(
+    r"^\[[^\]]*(?:"
+    r"text|lyrics|verse|chorus|pre-chorus|bridge|intro|interlude|outro|"
+    r"текст песни|куплет|припев|предприпев|бридж|интро|интерлюдия|аутро"
+    r")[^\]]*\]$",
+    re.IGNORECASE,
+)
 BRACKET_NOTE_RE = re.compile(r"^\[+([^][]+)\]+$")
 SKIP_EXACT = {
     "You might also like",
