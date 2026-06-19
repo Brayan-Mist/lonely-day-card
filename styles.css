@@ -939,13 +939,15 @@ h1 {
   }
 
   .postcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100vw;
     height: 100vh;
     height: 100dvh;
     min-height: 0;
     max-height: 100dvh;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
   }
 
   .postcard::before {
@@ -957,17 +959,19 @@ h1 {
   }
 
   .content {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) clamp(92px, 24vw, 108px);
-    align-items: start;
-    column-gap: 10px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: clamp(18px, 3dvh, 26px);
     height: auto;
     min-height: 0;
-    padding: clamp(17px, 2.8dvh, 24px) 16px 0;
+    padding: clamp(18px, 3dvh, 26px) 16px 0;
   }
 
   .message {
     min-width: 0;
+    width: 100%;
   }
 
   .message__eyebrow,
@@ -985,7 +989,7 @@ h1 {
   }
 
   .message__text {
-    max-width: 17.5rem;
+    max-width: 22rem;
     margin-top: 15px;
     font-size: 0.94rem;
     line-height: 1.5;
@@ -1004,12 +1008,11 @@ h1 {
   }
 
   .player {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: start;
+    align-self: center;
     justify-self: center;
-    margin-top: 16px;
-    margin-right: 4px;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
     transform: none;
   }
 
@@ -1018,39 +1021,39 @@ h1 {
   }
 
   .vinyl-stage {
-    min-height: 88px;
+    min-height: clamp(138px, 18dvh, 166px);
   }
 
   .vinyl-stage::before {
-    width: 106px;
-    filter: blur(10px);
+    width: clamp(172px, 48vw, 204px);
+    filter: blur(14px);
   }
 
   .vinyl-stage::after {
-    width: 86px;
+    width: clamp(146px, 41vw, 174px);
   }
 
   .record {
-    width: clamp(70px, 19.5vw, 86px);
+    width: clamp(140px, 38vw, 160px);
   }
 
   .record::before {
-    inset: 6px;
+    inset: 8px;
   }
 
   .record::after {
-    width: 7px;
-    height: 7px;
-    border-width: 1px;
+    width: 9px;
+    height: 9px;
+    border-width: 2px;
   }
 
   .record__label {
-    inset: 18%;
+    inset: 20%;
     box-shadow:
-      0 0 0 2px rgba(255, 245, 228, 0.78),
-      0 0 0 5px rgba(17, 24, 44, 0.8),
-      0 0 0 6px rgba(255, 245, 228, 0.14),
-      inset 0 0 14px rgba(0, 0, 0, 0.34);
+      0 0 0 3px rgba(255, 245, 228, 0.78),
+      0 0 0 7px rgba(17, 24, 44, 0.8),
+      0 0 0 8px rgba(255, 245, 228, 0.14),
+      inset 0 0 18px rgba(0, 0, 0, 0.34);
   }
 
   .record__label img {
@@ -1058,11 +1061,11 @@ h1 {
   }
 
   .tonearm {
-    top: 24px;
-    right: calc(50% - 49px);
-    width: 52px;
-    height: 9px;
-    transform: translate3d(4px, -4px, 0) rotate(20deg);
+    top: clamp(34px, 4.8dvh, 42px);
+    right: calc(50% - 110px);
+    width: 82px;
+    height: 13px;
+    transform: translate3d(6px, -6px, 0) rotate(20deg);
   }
 
   .postcard.is-playing .tonearm {
@@ -1070,26 +1073,26 @@ h1 {
   }
 
   .tonearm::before {
-    right: -9px;
-    top: -6px;
-    width: 21px;
-    height: 21px;
+    right: -13px;
+    top: -10px;
+    width: 32px;
+    height: 32px;
   }
 
   .tonearm::after {
-    left: -5px;
-    top: 4px;
-    width: 12px;
-    height: 19px;
-    border-radius: 4px;
-    clip-path: inset(0 round 4px);
+    left: -7px;
+    top: 7px;
+    width: 16px;
+    height: 27px;
+    border-radius: 5px;
+    clip-path: inset(0 round 5px);
   }
 
   .tonearm__needle {
     left: 1px;
-    top: 18px;
+    top: 28px;
     width: 2px;
-    height: 8px;
+    height: 10px;
   }
 
   .floor-row {
@@ -1098,7 +1101,8 @@ h1 {
     right: auto;
     top: auto;
     bottom: auto;
-    margin: 20px 14px 18px;
+    flex: 0 0 auto;
+    margin: 0 14px clamp(24px, 4dvh, 32px);
     grid-template-columns: minmax(0, 1fr);
     grid-template-rows: repeat(2, minmax(142px, auto));
     row-gap: 18px;
