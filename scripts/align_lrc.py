@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-WORD_RE = re.compile(r"[A-Za-z0-9]+(?:['\u2019][A-Za-z0-9]+)?")
+WORD_RE = re.compile(r"[^\W_]+(?:[-'\u2019][^\W_]+)*", re.UNICODE)
 
 
 @dataclass

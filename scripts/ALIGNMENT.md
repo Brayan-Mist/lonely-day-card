@@ -15,7 +15,8 @@ Generate LRC:
   .\lyrics-spat.txt `
   -o .\assets\spat.lrc `
   --model base `
-  --language ru
+  --language ru `
+  --preview-lines 0
 ```
 
 The lyrics text file must contain one sung line per line, in the exact song order.
