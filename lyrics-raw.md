@@ -1,0 +1,82 @@
+\[Verse 1: Daron Malakian]
+
+Such a lonely day and it's mine
+
+The most loneliest day of my life
+
+Such a lonely day should be banned
+
+It's a day that I can't stand
+
+
+
+\[Chorus: Daron Malakian \& Serj Tankian]
+
+The most loneliest day of my life
+
+The most loneliest day of my life
+
+
+
+\[Verse 2: Daron Malakian]
+
+Such a lonely day shouldn't exist
+
+It's a day that I'll never miss
+
+Such a lonely day and it's mine
+
+The most loneliest day of my life
+
+
+
+\[Bridge: Daron Malakian \& Serj Tankian]
+
+And if you go, I wanna go with you
+
+And if you die, I wanna die with you
+
+Take your hand and walk away
+
+
+
+\[Guitar Solo]
+
+
+
+\[Chorus: Daron Malakian \& Serj Tankian, Daron Malakian]
+
+The most loneliest day of my life
+
+The most loneliest day of my life
+
+The most loneliest day of my life
+
+See System of a Down Live
+
+Get tickets as low as $82
+
+
+
+You might also like
+
+THE HEART PART 6
+
+Drake
+
+So Long, London
+
+Taylor Swift
+
+My Boy Only Breaks His Favorite Toys
+
+Taylor Swift
+
+
+
+\[Outro: Daron Malakian]
+
+Such a lonely day and it's mine
+
+It's a day that I'm glad I survived
+
