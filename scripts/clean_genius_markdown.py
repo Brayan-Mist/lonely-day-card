@@ -16,7 +16,6 @@ MARKDOWN_LINK_RE = re.compile(r"\[([^\]]+)\]\([^)]+\)")
 SECTION_RE = re.compile(r"^\[[A-Za-z ]+(?::[^\]]*)?\]$")
 BRACKET_NOTE_RE = re.compile(r"^\[+([^][]+)\]+$")
 SKIP_EXACT = {
-    "See System of a Down Live",
     "You might also like",
 }
 SKIP_PREFIXES = (

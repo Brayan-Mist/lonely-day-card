@@ -8,8 +8,10 @@ Thumbs.db
 preview_*.mp3
 preview_alignment_check.mp3
 
-# Local copyrighted/source-only files. Do not publish these to public Pages.
+# Local copyrighted/source-only files. Keep these out of public GitHub Pages.
 lyrics-raw.md
 lyrics.txt
-assets/lonely-day.mp3
-assets/lonely-day.lrc
+lyrics-spat-raw.md
+lyrics-spat.txt
+assets/*.mp3
+assets/*.lrc

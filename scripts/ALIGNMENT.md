@@ -11,30 +11,30 @@ Generate LRC:
 
 ```powershell
 .\.venv-align\Scripts\python.exe .\scripts\align_lrc.py `
-  .\assets\lonely-day.mp3 `
-  .\lyrics.txt `
-  -o .\assets\lonely-day.lrc `
+  .\assets\spat.mp3 `
+  .\lyrics-spat.txt `
+  -o .\assets\spat.lrc `
   --model base `
-  --language en
+  --language ru
 ```
 
 The lyrics text file must contain one sung line per line, in the exact song order.
-The page automatically loads `assets/lonely-day.lrc` when it exists.
+The page automatically loads `assets/spat.lrc` when it exists.
 
 If the source is copied Genius-style markdown, clean it first:
 
 ```powershell
 .\.venv-align\Scripts\python.exe .\scripts\clean_genius_markdown.py `
-  .\lyrics-raw.md `
-  -o .\lyrics.txt
+  .\lyrics-spat-raw.md `
+  -o .\lyrics-spat.txt
 ```
 
 Cut a 3-second manual-check clip around a timestamp:
 
 ```powershell
 .\.venv-align\Scripts\python.exe .\scripts\cut_lrc_preview.py `
-  .\assets\lonely-day.mp3 `
-  "[00:16.42]Such a lonely day" `
+  .\assets\spat.mp3 `
+  "[00:16.42]First synced line" `
   -o .\preview_00_16.mp3
 ```
 

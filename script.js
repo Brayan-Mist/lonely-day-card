@@ -9,35 +9,19 @@ const songProgress = document.querySelector("[data-song-progress]");
 const songCurrent = document.querySelector("[data-song-current]");
 const songDuration = document.querySelector("[data-song-duration]");
 const relationshipStart = new Date("2026-06-17T22:53:58+03:00");
+const songTitle = "Spat";
+const lrcPath = "assets/spat.lrc";
 let activeSongMomentIndex = -1;
 let songLineTransitionTimer;
 let playbackErrorTimer;
 let isUsingTimedLyrics = false;
 let lyricsReady = false;
 
-const defaultSongMoments = [
-  { time: 0, text: "A lonely day begins, but now it has your yes inside it." },
-  { time: 9, text: "It used to feel like one heart alone with the rain." },
-  { time: 17, text: "Then you answered, and the quiet became softer." },
-  { time: 25, text: "This day should have been hard to stand." },
-  { time: 34, text: "Instead, it became the place where we started." },
-  { time: 45, text: "The song repeats the ache; I keep hearing your voice." },
-  { time: 55, text: "At 22:53:58, the whole evening changed its meaning." },
-  { time: 66, text: "I love you so much, more gently than I know how to say." },
-  { time: 78, text: "You are the best girl in the world." },
-  { time: 90, text: "If the night gets heavy, I want to stay close to you." },
-  { time: 101, text: "Wherever you go, I want my hand in yours." },
-  { time: 113, text: "We can leave the lonely part behind together." },
-  { time: 126, text: "The loudest part of the song becomes our little promise." },
-  { time: 139, text: "The lonely day was real, but it did not win." },
-  { time: 151, text: "You said yes. I am so glad this day brought me to you." },
-  { time: 163, text: "When the music fades, the timer keeps going. So do we." },
-];
-let songMoments = [...defaultSongMoments];
+let songMoments = [];
 
 const setPlaybackState = (isPlaying) => {
   postcard.classList.toggle("is-playing", isPlaying);
-  playButton.setAttribute("aria-label", isPlaying ? "Pause Lonely Day" : "Play Lonely Day");
+  playButton.setAttribute("aria-label", `${isPlaying ? "Pause" : "Play"} ${songTitle}`);
   playButton.setAttribute("aria-pressed", String(isPlaying));
   playIcon.setAttribute("d", isPlaying ? "M7 5h4v14H7zM13 5h4v14h-4z" : "M8 5v14l11-7Z");
 };
@@ -92,7 +76,7 @@ const useFallbackLyrics = () => {
 const loadLrc = () => {
   const request = new XMLHttpRequest();
 
-  request.open("GET", `assets/lonely-day.lrc?v=${Date.now()}`, true);
+  request.open("GET", `${lrcPath}?v=${Date.now()}`, true);
   request.overrideMimeType("text/plain; charset=utf-8");
 
   request.onload = () => {

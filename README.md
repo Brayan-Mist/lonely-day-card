@@ -1,4 +1,4 @@
-# Lonely Day Card
+# Spat Card
 
 A static romantic postcard page.
 
@@ -15,7 +15,7 @@ Open `http://127.0.0.1:4173/`.
 For public GitHub Pages, the local track file and full LRC lyrics are not committed.
 To enable audio locally or with licensed assets, add:
 
-- `assets/lonely-day.mp3`
-- `assets/lonely-day.lrc`
+- `assets/spat.mp3`
+- `assets/spat.lrc`
 
 The page will automatically load the LRC file when it exists.
